@@ -29,7 +29,35 @@ public class calculator implements ActionListener{
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(420, 550);
         frame.setLayout(null);
-        
+
+        textfield = new JTextField();
+        textfield.setBounds(50, 25, 500, 50);
+        textfield.setFont(myFont);
+        textfield.setEditable(false);
+
+        addButton = new JButton("+");
+        subButton = new JButton("-");
+        mulButton = new JButton("*");
+        divButton = new JButton("/");
+        decButton = new JButton(".");
+        equButton = new JButton("=");
+        delButton = new JButton("Delete");
+        clrButton = new JButton("clear");
+
+        functionButtons[0] = addButton;
+        functionButtons[1] = subButton;
+        functionButtons[2] = mulButton;
+        functionButtons[3] = divButton;
+        functionButtons[4] = decButton;
+        functionButtons[5] = equButton;
+        functionButtons[6] = delButton;
+        functionButtons[7] = clrButton;
+
+        for(int i = 0; i<8; i++) {
+            
+        }
+
+        frame.add(textfield);
         frame.setVisible(true);
     }
 
@@ -41,5 +69,6 @@ public static void main(String[] args) {
 @Override
 public void actionPerformed(ActionEvent e) {
     // TODO Auto-generated method stub
-    throw new UnsupportedOperationException("Unimplemented method 'actionPerformed'");
+
+}
 }
